@@ -38,7 +38,7 @@ h1{
 }
 
 .box:hover{
-    background-color:orange;
+    background-color:#ffa500;
     color: black;
 }
 
