@@ -27,6 +27,9 @@ function gameWin() {
         if((boxtexts[e[0]].innerText==boxtexts[e[1]].innerText) && (boxtexts[e[1]].innerText==boxtexts[e[2]].innerText) && boxtexts[e[0]].innerText!=""){
             isgameOver=true;
             document.getElementsByClassName("res")[0].innerText=`${boxtexts[e[0]].innerText} Wins!!`;
+            setTimeout(function(){
+                window.location.reload();
+             }, 5000);
             // console.log(cou);
             document.getElementById(`${wins[cou][0]}`).style.backgroundColor="darkorange";
             document.getElementById(`${wins[cou][0]}`).style.color="black";
@@ -34,7 +37,6 @@ function gameWin() {
             document.getElementById(`${wins[cou][1]}`).style.color="black";
             document.getElementById(`${wins[cou][2]}`).style.backgroundColor="darkorange";
             document.getElementById(`${wins[cou][2]}`).style.color="black";
-            // reset();
         }
     })
 }
